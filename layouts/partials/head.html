@@ -39,12 +39,26 @@
   <meta property="og:image" content="{{ .Params.album }}" />
   {{ end }}
 
+<!--
   {{ with resources.Get "css/index.css" | minify }}
     <style>{{ .Content | safeCSS }}</style>
   {{ end }}
   {{ with resources.Get "css/flexboxgrid-6.3.1.min.css" | minify }}
     <style>{{ .Content | safeCSS }}</style>
   {{ end }}
+-->
+
+  {{ $style := resources.Get "css/index.css" | resources.Minify }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+	
+  {{ $style := resources.Get "css/flexboxgrid-6.3.1.min.css" }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+	
+  {{ $style := resources.Get "css/github-markdown.css" }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+	
+  {{ $style := resources.Get "css/tomorrow.min.css" }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
 
   {{ range .Site.Params.extraCSSFiles -}}
   <link rel="stylesheet" href="{{ $.Site.Params.staticPrefix }}{{ . | relURL }}">
