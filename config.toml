@@ -28,7 +28,7 @@ canonifyURLs = false
     tabWidth = 2
 
 [author]
-  name = "Dyson"
+#  name = ""
   homepage = "https://www.wangxingdi.com"
 
 [languages]
