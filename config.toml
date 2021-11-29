@@ -42,7 +42,7 @@ canonifyURLs = false
     weight = 2
 
 [permalinks]
-    posts = "/blog/:year/:filename"
+    posts = "/blog/:year/:slug"
 
 [params]
   headTitle = "脑子是个好东西"
