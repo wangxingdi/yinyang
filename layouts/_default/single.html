@@ -67,6 +67,12 @@
           </div>
           {{ end }}
         {{ end }}
+		
+		<!-- toc begin -->
+		{{ if .Site.Params.toc | default false }}
+		{{ partial "toc" . }}
+		{{ end }}
+		<!-- toc end -->
 
         {{ partial "footer.html" . }}
       </div>
