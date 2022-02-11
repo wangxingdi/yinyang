@@ -23,9 +23,6 @@ ignoreFiles = [ "readme.md", "README.MD", "README.md" ]
   name = "Ady"
   homepage = "https://www.wangxingdi.com"
 
-[permalinks]
-  post = "/:year/:slug"
-
 [params]
   headTitle = "脑子是个好东西"
   description = "Log something useless, but interesting."
@@ -41,6 +38,9 @@ ignoreFiles = [ "readme.md", "README.MD", "README.md" ]
 
 
 
+
+#[permalinks]
+#  post = "/:year/:slug"
 
 # [[params.socials]]
 # name = "Telegram"
