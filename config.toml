@@ -34,7 +34,7 @@ ignoreFiles = [ "readme.md", "README.MD", "README.md" ]
   
   [[params.socials]]
     name = "Travel"
-    link = "/travel"
+    link = "/blog/travel"
 
 
 
