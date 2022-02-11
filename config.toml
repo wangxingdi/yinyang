@@ -1,4 +1,4 @@
-baseURL = "https://www.wangxingdi.com/"
+baseURL = "https://www.wangxingdi.com/blog"
 languageCode = "en-us"
 title = "阿迪的博客"
 theme = "yinyang"
